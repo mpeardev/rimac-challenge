@@ -1,0 +1,44 @@
+@use "/src/styles/utilities/utilities" as utilities;
+@use "/src/styles/base/breakpoints" as breakpoints;
+@use "/src/styles/base/variables" as variables;
+@use "/src/styles/base/colors" as colors;
+
+.header {
+  width: 100%;
+  height: variables.$header-height;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  &__container {
+    width: 100%;
+    max-width: breakpoints.$screen-xl;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 4%;
+    @include utilities.rimac-flexbox-space-between();
+    @include breakpoints.medium {
+      padding: 0 22px;
+    }
+  }
+  &__info {
+    @include utilities.rimac-flexbox-param(flex, center, auto);
+    gap: 16px;
+    & > span {
+      @include utilities.rimac-font-details(12px, 16px, 600, colors.$dark-90);
+      letter-spacing: 0.2px;
+
+      @include breakpoints.medium {
+        display: none;
+      }
+    }
+    & > div {
+      @include utilities.rimac-flexbox-param(flex, center, auto);
+      gap: 8px;
+      & > span {
+        @include utilities.rimac-font-details(18px, 20px, 700, colors.$dark-90);
+        letter-spacing: 0.4px;
+      }
+    }
+  }
+}

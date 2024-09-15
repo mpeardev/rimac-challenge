@@ -1,0 +1,54 @@
+/*
+Typography
+==========================================================================
+*/
+
+// BRSonoma
+@font-face {
+  font-family: "BRSonoma";
+  src: url("/src/assets/fonts/brsonoma/BRSonoma-Regular.otf");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BRSonoma";
+  src: url("/src/assets/fonts/brsonoma/BRSonoma-Medium.otf");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BRSonoma";
+  src: url("/src/assets/fonts/brsonoma/BRSonoma-SemiBold.otf");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+// Lato
+@font-face {
+  font-family: "Lato";
+  src: url("/src/assets/fonts/lato/Lato-Light.ttf");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("/src/assets/fonts/lato/Lato-Regular.ttf");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("/src/assets/fonts/lato/Lato-Bold.ttf");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}

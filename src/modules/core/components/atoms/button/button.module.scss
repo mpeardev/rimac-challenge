@@ -1,0 +1,40 @@
+@use "/src/styles/base/colors" as colors;
+@use "/src/styles/utilities/utilities" as utilities;
+
+.button {
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &.sm {
+    padding: 14px 32px;
+    @include utilities.rimac-font-details(16px, 20px, 400, colors.$white);
+  }
+
+  &.md {
+    padding: 20px 40px;
+    @include utilities.rimac-font-details(20px, 24px, 700, colors.$white);
+  }
+
+  &.primary {
+    background-color: colors.$dark-90;
+    color: colors.$white;
+  }
+
+  &.secondary {
+    background-color: colors.$red;
+    color: colors.$white;
+  }
+
+  &.fit {
+    width: fit-content;
+  }
+  &.max {
+    width: 100%;
+  }
+}

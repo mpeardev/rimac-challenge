@@ -1,0 +1,19 @@
+@use "/src/styles/base/variables" as variables;
+
+.layout {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  position: relative;
+  overflow: hidden;
+  &__main {
+    position: relative;
+    padding-top: variables.$header-height;
+    &Main {
+      font-family: variables.$typo-base;
+    }
+    &Quote {
+      font-family: variables.$typo-secondary;
+    }
+  }
+}

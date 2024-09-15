@@ -1,0 +1,35 @@
+@use "/src/styles/base/breakpoints" as breakpoints;
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  &__left,
+  &__right {
+    height: 100%;
+    & > img {
+      height: 100%;
+    }
+  }
+  &__left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    @include breakpoints.medium {
+      bottom: calc(-350px);
+    }
+  }
+  &__right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    @include breakpoints.medium {
+      top: calc(-450px);
+    }
+  }
+}

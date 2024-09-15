@@ -1,0 +1,55 @@
+/*
+Utilities
+==========================================================================
+*/
+
+// Mixins
+@mixin rimac-truncate() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin rimac-truncate-lines($size) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $size;
+  overflow: hidden;
+}
+
+@mixin rimac-flexbox-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin rimac-flexbox-start() {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin rimac-flexbox-space-between() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin rimac-flexbox-space-around() {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin rimac-flexbox-param($display, $align, $justify) {
+  display: $display;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin rimac-font-details($size, $line-h, $weight, $color) {
+  font-size: $size;
+  line-height: $line-h;
+  font-weight: $weight;
+  color: $color;
+}

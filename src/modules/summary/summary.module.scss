@@ -1,0 +1,101 @@
+@use "/src/styles/base/breakpoints" as breakpoints;
+@use "/src/styles/base/colors" as colors;
+@use "/src/styles/utilities/utilities" as utilities;
+@use "/src/styles/base/variables" as variables;
+
+.summary {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &__container {
+    width: 100%;
+    max-width: calc(breakpoints.$screen-xl - 74px);
+    height: 100%;
+    margin: 0 auto;
+    padding: 54px 4%;
+    @include breakpoints.medium {
+      padding-top: 0;
+    }
+  }
+
+  &__return {
+    width: fit-content;
+    @include utilities.rimac-flexbox-center();
+    gap: 8px;
+    @include utilities.rimac-font-details(18px, 20px, 700, colors.$blueberry);
+    letter-spacing: 0.4px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover {
+      opacity: 0.8;
+    }
+    @include breakpoints.medium {
+      display: none;
+    }
+  }
+
+  & main {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 56px;
+    @include breakpoints.medium {
+      margin-top: 30px;
+      max-width: auto;
+    }
+
+    & > h1 {
+      margin-top: 30px;
+      @include utilities.rimac-font-details(40px, 48px, 700, colors.$dark);
+      letter-spacing: -0.6px;
+      @include breakpoints.medium {
+        @include utilities.rimac-font-details(32px, 40px, 700, colors.$dark);
+      }
+    }
+  }
+
+  &__detailCard {
+    margin-top: 33px;
+    &Head {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid colors.$white-20;
+      & > span {
+        text-transform: uppercase;
+        @include utilities.rimac-font-details(10px, 16px, 900, colors.$dark);
+        letter-spacing: 0.8px;
+      }
+      & > div {
+        display: flex;
+        gap: 12px;
+      }
+      & h4 {
+        @include utilities.rimac-font-details(20px, 28px, 700, colors.$dark);
+        letter-spacing: -0.2px;
+      }
+    }
+    &Detail {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 14px;
+      & h6 {
+        @include utilities.rimac-font-details(16px, 24px, 700, colors.$dark);
+        letter-spacing: 0.2px;
+      }
+      & p {
+        @include utilities.rimac-font-details(14px, 24px, 400, colors.$dark);
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+
+  &__card {
+    width: 100%;
+    box-shadow: 0px 1px 32px 0px rgba(colors.$purple-light, 0.35);
+    padding: 24px 32px 24px 32px;
+    border-radius: 24px;
+  }
+}
