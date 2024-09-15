@@ -20,7 +20,7 @@ export default function Summary() {
             onClick={() => navigate("/plans")}
           >
             <ButtonCircle
-              icon="/src/assets/icons/GlDown.svg"
+              icon="/rimac-challenge/icons/GlDown.svg"
               size="sm"
               active
             />
@@ -38,7 +38,7 @@ export default function Summary() {
                   <span>Precios calculados para:</span>
                   <div>
                     <img
-                      src="/src/assets/icons/gl_family-24x24.svg"
+                      src="/rimac-challenge/icons/gl_family-24x24.svg"
                       alt="icon"
                     />
                     <h4>

@@ -101,7 +101,7 @@ export default function Plans() {
         <div className={classes.plans__container}>
           <div className={classes.plans__return} onClick={() => navigate("/")}>
             <ButtonCircle
-              icon="/src/assets/icons/GlDown.svg"
+              icon="/rimac-challenge/icons/GlDown.svg"
               size="sm"
               active
             />
@@ -133,7 +133,7 @@ export default function Plans() {
                       <div>
                         {userOption === "forMe" && (
                           <img
-                            src="/src/assets/icons/check-radius.svg"
+                            src="/rimac-challenge/icons/check-radius.svg"
                             alt="check"
                           />
                         )}
@@ -141,7 +141,7 @@ export default function Plans() {
                     </div>
                     <div className={classes.plans__cardContent}>
                       <img
-                        src="/src/assets/icons/IcProtectionLight.svg"
+                        src="/rimac-challenge/icons/IcProtectionLight.svg"
                         alt="image-card"
                       />
                       <h4>Para mi</h4>
@@ -169,7 +169,7 @@ export default function Plans() {
                       <div>
                         {userOption === "forSomeone" && (
                           <img
-                            src="/src/assets/icons/check-radius.svg"
+                            src="/rimac-challenge/icons/check-radius.svg"
                             alt="check"
                           />
                         )}
@@ -177,7 +177,7 @@ export default function Plans() {
                     </div>
                     <div className={classes.plans__cardContent}>
                       <img
-                        src="/src/assets/icons/IcAddUserLight.svg"
+                        src="/rimac-challenge/icons/IcAddUserLight.svg"
                         alt="image-card"
                       />
                       <h4>Para alguien más</h4>
@@ -204,7 +204,7 @@ export default function Plans() {
                           </div>
                         </div>
                         <img
-                          src="/src/assets/icons/IcHomeLight.svg"
+                          src="/rimac-challenge/icons/IcHomeLight.svg"
                           alt="image-card"
                         />
                       </div>
@@ -213,7 +213,7 @@ export default function Plans() {
                           {plan.description.map((item, index) => (
                             <li key={index}>
                               <img
-                                src="/src/assets/icons/GlMedicalAttentionSolid.svg"
+                                src="/rimac-challenge/icons/GlMedicalAttentionSolid.svg"
                                 alt="icon"
                               />
                               <span>{item}</span>

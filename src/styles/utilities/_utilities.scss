@@ -5,9 +5,11 @@ Utilities
 
 // Mixins
 @mixin rimac-truncate() {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  & {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }
 
 @mixin rimac-truncate-lines($size) {

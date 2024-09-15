@@ -59,7 +59,7 @@ export default function Stepper() {
         <div className={classes.steppermb}>
           <div className={classes.steppermb__container}>
             <ButtonCircle
-              icon="/src/assets/icons/GlLeft.svg"
+              icon="/rimac-challenge/icons/GlLeft.svg"
               onClick={() => navigate("/")}
             />
             <div className={classes.steppermb__main}>

@@ -92,7 +92,7 @@ export default function HealthInsurance() {
       <div className={classes.health}>
         <div className={classes.health__container}>
           <div className={classes.health__image}>
-            <img src="/src/assets/imgs/persons.png" alt="persons.png" />
+            <img src="/rimac-challenge/imgs/persons.png" alt="persons.png" />
           </div>
 
           <div className={classes.health__head}>

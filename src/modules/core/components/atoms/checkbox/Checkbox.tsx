@@ -39,7 +39,7 @@ const Checkbox: React.FC<CheckboxProps> = ({
         }`}
       >
         {checked && (
-          <img src="/src/assets/icons/check-checkbox.svg" alt="checked" />
+          <img src="/rimac-challenge/icons/check-checkbox.svg" alt="checked" />
         )}
       </span>
     </div>
